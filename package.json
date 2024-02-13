@@ -36,8 +36,7 @@
       "plugin:@tanstack/eslint-plugin-query/recommended",
       "plugin:import/errors",
       "plugin:import/warnings",
-      "plugin:@typescript-eslint/recommended",
-      "prettier"
+      "plugin:@typescript-eslint/recommended"
     ],
     "root": true,
     "env": {
@@ -67,13 +66,6 @@
       "react-hooks/exhaustive-deps": [
         "warn"
       ],
-      "react/function-component-definition": [
-        2,
-        [
-          "arrow-function",
-          "function-declareation"
-        ]
-      ],
       "react/jsx-filename-extension": [
         "warn",
         {
@@ -93,12 +85,6 @@
       "react/require-default-props": "off",
       "import/prefer-default-export": "off",
       "react/jsx-prop-no-spreading": "off",
-      "import/no-extranous-dependencies": [
-        "error",
-        {
-          "devDependencies": true
-        }
-      ],
       "arrow-body-style": "off"
     },
     "settings": {
