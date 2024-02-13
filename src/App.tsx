@@ -1,8 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  const handleOnClick = () => {
+    window.ReactNativeWebView.postMessage("Message from React");
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={() => handleOnClick()}>RN 통신</button>
       </header>
     </div>
   );
