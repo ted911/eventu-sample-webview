@@ -9,6 +9,7 @@ declare global {
       postMessage: (message: string) => void;
       injectObjectJson: () => string;
     };
+    isNativeApp: boolean;
   }
 }
 const root = ReactDOM.createRoot(
