@@ -33,72 +33,13 @@
     "extends": [
       "react-app",
       "react-app/jest",
-      "plugin:@tanstack/eslint-plugin-query/recommended",
-      "plugin:import/errors",
-      "plugin:import/warnings",
-      "plugin:@typescript-eslint/recommended"
+      "plugin:@tanstack/eslint-plugin-query/recommended"
     ],
     "root": true,
     "env": {
       "browser": true,
       "node": true,
       "jest": true
-    },
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-      "project": "./tsconfig.json"
-    },
-    "rules": {
-      "import/extensions": [
-        "error",
-        "ignorePackages",
-        {
-          "ts": "never",
-          "tsx": "never"
-        }
-      ],
-      "@typescript-eslint/explicit-module-boundary-types": "off",
-      "react/react-in-jsx-scope": "off",
-      "react/jsx-pascal-case": "warn",
-      "no-console": [
-        "off"
-      ],
-      "react-hooks/exhaustive-deps": [
-        "warn"
-      ],
-      "react/jsx-filename-extension": [
-        "warn",
-        {
-          "extensions": [
-            ".tsx"
-          ]
-        }
-      ],
-      "no-empty": [
-        "error",
-        {
-          "allowEmptyCatch": false
-        }
-      ],
-      "no-empty-function": "error",
-      "@typescript-eslint/no-explicit-any": "off",
-      "react/require-default-props": "off",
-      "import/prefer-default-export": "off",
-      "react/jsx-prop-no-spreading": "off",
-      "arrow-body-style": "off"
-    },
-    "settings": {
-      "import/resolver": {
-        "node": {
-          "extensions": [
-            ".js",
-            ".jsx",
-            ".ts",
-            ".tsx"
-          ]
-        },
-        "typescript": {}
-      }
     }
   },
   "browserslist": {

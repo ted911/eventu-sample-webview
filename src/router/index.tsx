@@ -1,17 +1,17 @@
+import RootLayout from "pages/RootLayout";
+import Benefit from "pages/benefit/Benefit";
+import LuckyPrize from "pages/benefit/luckyPrize/LuckyPrize";
+import TodayOfMission from "pages/benefit/todayOfMission/TodayOfMission";
+import Event from "pages/event/Event";
+import Search from "pages/search/Search";
+import EventLayout from "pages/event/EventLayout";
+import EventDetail from "pages/event/detail/EventDetail";
+import EventWrite from "pages/event/write/EventWrite";
+import Feed from "pages/feed/Feed";
+import Home from "pages/home/Home";
+import MyPage from "pages/myPage/MyPage";
+import TeamStory from "pages/teamStory/TeamStory";
 import { createBrowserRouter } from "react-router-dom";
-import RootLayout from "src/app/RootLayout";
-import Benefit from "src/app/benefit/Benefit";
-import LuckyPrize from "src/app/benefit/luckyPrize/LuckyPrize";
-import TodayOfMission from "src/app/benefit/todayOfMission/TodayOfMission";
-import EventLayout from "src/app/event/EventLayout";
-import EventDetail from "src/app/event/detail/EventDetail";
-import EventWrite from "src/app/event/write/EventWrite";
-import Feed from "src/app/feed/Feed";
-import Home from "src/app/home/Home";
-import TeamStory from "src/app/teamStory/TeamStory";
-import Event from "src/app/event/Event";
-import Mypage from "src/app/myPage/MyPage";
-import Search from "src/app/search/Search";
 
 const router = createBrowserRouter([
   {
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
           { path: "today-of-mission", element: <TodayOfMission /> },
         ],
       },
-      { path: "my-page", element: <Mypage /> },
+      { path: "my-page", element: <MyPage /> },
       { path: "search", element: <Search /> },
     ],
   },
